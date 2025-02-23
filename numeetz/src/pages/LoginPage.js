@@ -11,19 +11,18 @@ const LoginPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault(); // Prevent page reload
 
-    if (!username || !password) {
+    if (!username.trim() || !password.trim()) {
       setError("Please fill in both fields.");
       return;
     }
 
-    // Simulated login validation
-    if (username === "user" && password === "password") {
-      setError("");
-      alert("Login Successful!");
-      navigate("/dashboard"); // Redirect to dashboard
-    } else {
-      setError("Invalid username or password.");
-    }
+    setError("");
+    localStorage.setItem("authToken", "validToken"); // Store authentication status
+    
+    // Redirect to dashboard
+    setTimeout(() => {
+      navigate("/dashboard");
+    }, 500);
   };
 
   return (
