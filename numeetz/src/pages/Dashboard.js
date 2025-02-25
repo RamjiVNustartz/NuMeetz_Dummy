@@ -129,7 +129,7 @@ const Meetings = () => {
 
 
 const styles = {
-  container: { fontFamily: "Arial, sans-serif", backgroundColor: "#F8F9FC", height: "100vh" },
+  container: { fontFamily: "Arial, sans-serif", backgroundColor: "#F8F9FC", height: "850px" },
   navbar: { display: "flex", alignItems: "center", justifyContent: "space-between", padding: "10px 20px", backgroundColor: "#FFFFFF", boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)" },
   logoContainer: { display: "flex", alignItems: "center" },
   logo: { width: "90px", height: "90px", marginRight: "10px" },
@@ -137,7 +137,7 @@ const styles = {
   navLinks: { display: "flex", gap: "20px", fontSize: "16px", marginRight: "720px" },
   meetingButton: { cursor: "pointer", fontWeight: "bold", color: "#00AEEF", border: "none", backgroundColor: "transparent", fontSize: "16px" },
   mainContent: { textAlign: "left", paddingTop: "30px", padding: "50px" },
-  heading: { fontSize: "24px", fontWeight: "bold" },
+  heading: { fontSize: "24px", fontWeight: "bold",textAlign:"center" },
   meetingBox: { marginTop: "20px", padding: "20px", backgroundColor: "#FFFFFF", borderRadius: "10px", boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", width: "800px", height: "500px", margin: "auto" },
   controlsOverlay: { position: "absolute", bottom: "10px", left: "50%", transform: "translateX(-50%)", display: "flex", gap: "10px" },
   controlButton: { backgroundColor: "gray", border: "none", borderRadius: "50%", padding: "10px", cursor: "pointer" },
@@ -175,6 +175,10 @@ const styles = {
     borderRadius: "10px", 
     border: "2px solid white", 
     zIndex: 2 
+  },
+  meetingIcon: {
+    width:"40px",
+    height:"40px",
   },
 
 
